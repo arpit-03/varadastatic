@@ -44,20 +44,20 @@
 <div class="header-bottom header-sticky">
 
 <div class="logo d-none d-lg-block">
-<a href="index.html"><img src="<%=asset_path('logo.png')%>" alt=""></a>
+<a class="home" style="cursor: pointer;"><img src="<%=asset_path('logo.png')%>" alt=""></a>
 </div>
 <div class="container">
 <div class="menu-wrapper">
 
 <div class="logo logo2 d-block d-lg-none">
-<a href="/"><img src="<%=asset_path('logo.png')%>" alt=""></a>
+<a class="home" style="cursor: pointer"><img src="<%=asset_path('logo.png')%>" alt=""></a>
 </div>
 
 <div class="main-menu d-none d-lg-block">
 <nav>
 <ul id="navigation">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
+<li><a class="home" style="cursor: pointer">Home</a></li>
+<li><a class="about" style="cursor: pointer">About</a></li>
 
 
 </ul>
@@ -296,7 +296,7 @@
 <li>(+91) - 9449414356</li>
 </ul>
 <p>
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved VaradaAcademy.com</a>
+Copyright ©2020 All rights reserved VaradaAcademy.com</a>
 </p>
 </div>
 </div>
@@ -311,3 +311,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <div id="back-top">
 <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
 </div>
+<script type="text/javascript">
+	$('.home').click(function(){
+		window.location="http://localhost:3000";
+	});
+	$('.about').click(function(){
+		window.location="http://localhost:3000#about";
+	});
+</script>
